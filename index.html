@@ -1,0 +1,37 @@
+<!--Jacob Sullivan
+    Jacob_sullivan@student.uml.edu
+    12/1/2022
+    HW4
+    index.html
+-->
+
+<!-- This file serves as the foundation of the Multiplication Table, creating the form and calling the JS function to create the table -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--Linking files and HTML5 -->
+    <title>Math</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+</head>
+<body>
+    <h1>Multiplication Table Generator:</h1>
+    <form name="Form" id="commentForm">  <!--Form creation -->
+        <label id="formhead">Please Enter the Below:</label><br><br>
+        <label for="fhorz">Minimum Row Value</label><br>
+        <input type="text" id="fhorz" name="fhorz" required><br><br>
+        <label for="shorz">Maximum Row Value</label><br>
+        <input type="text" id="shorz" name="shorz"><br><br>
+        <label for="fver">Minimum Column Value</label><br>
+        <input type="text" id="fvert" name="fvert"><br><br>
+        <label for="svert">Maximum Column Value</label><br>
+        <input type="text" id="svert" name="svert"><br><br>
+        <input type="button" value="Generate Multiplication Table" onclick="multTable(this.form)"> <!--When the button is clicked, js function is run to generate table -->
+    </form>
+    <div id="table"></div> <!--Space for table to form -->
+    
+</body>
+</html>
